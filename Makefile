@@ -6,7 +6,7 @@
 #    By: smunio <smunio@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/15 18:04:57 by smunio            #+#    #+#              #
-#    Updated: 2022/11/27 21:38:57 by smunio           ###   ########.fr        #
+#    Updated: 2022/11/27 21:51:47 by smunio           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ $(NAME): $(OBJECTS)
 		$(AR) -rc $@ $?
 		
 bonus: $(OBJECTSBONUS)
-		$(AR) -rc $(NAME) $@ $?
+		$(AR) -rc $(NAME) $?
 
 %.o: %.c
 		$(CC) -c $(FLAGS) $?
